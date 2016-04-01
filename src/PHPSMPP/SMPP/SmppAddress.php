@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPSMPP\SMPP;
+namespace Simbacode\PHPSMPP\SMPP;
 
 /**
  * Primitive class for encapsulating smpp addresses

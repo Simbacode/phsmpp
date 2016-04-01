@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPSMPP\SMPP;
+namespace Simbacode\PHPSMPP\SMPP;
 
 /**
  * Primitive class to represent SMPP optional params, also know as TLV (Tag-Length-Value) params

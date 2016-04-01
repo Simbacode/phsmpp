@@ -1,5 +1,5 @@
 <?php
 
-namespace PHPSMPP\Network;
+namespace Simbacode\PHPSMPP\Network;
 
 class SocketTransportException extends RuntimeException { }

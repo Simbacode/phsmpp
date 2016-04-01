@@ -1,5 +1,5 @@
 <?php
-namespace PHPSMPP\SMPP;
+namespace Simbacode\PHPSMPP\SMPP;
 
 /**
  * An extension of a SMS, with data embedded into the message part of the SMS.

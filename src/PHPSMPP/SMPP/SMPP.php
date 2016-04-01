@@ -1,5 +1,5 @@
 <?php
-namespace PHPSMPP\SMPP;
+namespace Simbacode\PHPSMPP\SMPP;
 
 /**
  * Numerous constants for SMPP v3.4

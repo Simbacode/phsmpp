@@ -7,7 +7,7 @@
  * Licensed under the MIT license, which can be read at: http://www.opensource.org/licenses/mit-license.php
  * @author hd@onlinecity.dk
  */
-namespace PHPSMPP\Encoding;
+namespace Simbacode\PHPSMPP\Network;
 
 class GsmEncoder
 {
