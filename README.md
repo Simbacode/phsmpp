@@ -1,8 +1,7 @@
 PHP-based SMPP client lib ( WITH NAMESPACE)
 =============
 
-I was face with some conflicts when one of the files an using has the same of class for this project so i created a namespaced version.
-[here is the original php-smpp library](https://github.com/onlinecity/php-smpp).
+I forked the original project to create separate project because of Conflicts. I created a namespaced version.[here is the original php-smpp library](https://github.com/onlinecity/php-smpp).
 
 This is a simplified SMPP client lib for sending or receiving smses through [SMPP v3.4](http://www.smsforum.net/SMPP_v3_4_Issue1_2.zip).
 
