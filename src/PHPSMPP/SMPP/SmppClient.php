@@ -67,7 +67,7 @@ class SmppClient
 	 * @param SocketTransport $transport
 	 * @param string $debugHandler
 	 */
-	public function __construct(Network\SocketTransport $transport,$debugHandler=null)
+	public function __construct(\Simbacode\PHPSMPP\Network\SocketTransport $transport,$debugHandler=null)
 	{
 		// Internal parameters
 		$this->sequence_number=1;
