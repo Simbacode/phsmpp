@@ -4,7 +4,7 @@
 	"type": "library",
 	"keywords": ["smpp", "sms", "texting", "gsm"],
 	"homepage": "http://github.com/mistaguy/phsmpp",
-        "version": "1.0.0",
+        "version": "1.3",
 	 "license": "LGPL",
 	"authors": [
 		{
