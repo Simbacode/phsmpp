@@ -160,7 +160,7 @@ class SmppClient
 				if ($h) $spec .= $h.'H';
 				if ($i) $spec .= $i.'M';
 				if ($s) $spec .= $s.'S';
-				return new DateInterval($spec);
+				return new \DateInterval($spec);
 			} else {
 				return strtotime("+$y year +$m month +$d day +$h hour +$i minute $s +second");
 			}
@@ -169,7 +169,7 @@ class SmppClient
 			$offsetMinutes = ($n % 4)*15;
 			$time = sprintf("20%02s-%02s-%02sT%02s:%02s:%02s%s%02s:%02s",$y,$m,$d,$h,$i,$s,$p,$offsetHours,$offsetMinutes); // Not Y3K safe
 			if ($newDates) {
-				return new DateTime($time);
+				return new \DateTime($time);
 			} else {
 				return strtotime($time);
 			}
@@ -468,7 +468,7 @@ class SmppClient
 	protected function parseSMS(SmppPdu $pdu)
 	{
 		// Check command id
-		if($pdu->id != SMPP::DELIVER_SM) throw new InvalidArgumentException('PDU is not an received SMS');
+		if($pdu->id != SMPP::DELIVER_SM) throw new \InvalidArgumentException('PDU is not an received SMS');
 
 		// Unpack PDU
 		$ar=unpack("C*",$pdu->body);
@@ -686,7 +686,7 @@ class SmppClient
 		// Read PDU body
 		if($length-16>0){
 			$body=$this->transport->readAll($length-16);
-			if(!$body) throw new RuntimeException('Could not read PDU body');
+			if(!$body) throw new \RuntimeException('Could not read PDU body');
 		} else {
 			$body=null;
 		}
@@ -743,7 +743,7 @@ class SmppClient
 	protected function parseTag(&$ar)
 	{
 		$unpackedData = unpack('nid/nlength',pack("C2C2",next($ar),next($ar),next($ar),next($ar)));
-		if (!$unpackedData) throw new InvalidArgumentException('Could not read tag data');
+		if (!$unpackedData) throw new \InvalidArgumentException('Could not read tag data');
 		extract($unpackedData);
 		
 		// Sometimes SMSC return an extra null byte at the end
