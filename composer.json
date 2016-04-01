@@ -1,5 +1,5 @@
 {
-	"name": "php-smpp/ns-php-smpp",
+	"name": "ns-php-smpp/ns-php-smpp",
 	"description": "PHP-based SMPP client lib",
 	"type": "library",
 	"keywords": ["smpp", "sms", "texting", "gsm"],
