@@ -1,0 +1,38 @@
+{
+	"name": "php-smpp/ns-php-smpp",
+	"description": "PHP-based SMPP client lib",
+	"type": "library",
+	"keywords": ["smpp", "sms", "texting", "gsm"],
+	"homepage": "http://github.com/mistaguy/php-smpp",
+        "version": "1.0.0",
+	 "license": "LGPL",
+	"authors": [
+		{
+			"name": "Acellam Guy",
+			"homepage": "http://mistaguy.com"
+		},
+                 {
+                    "name": "Hans Duedal",
+                    "email": "hd@oc.dk",
+                    "homepage": "http://oc.dk"
+                  }
+	],
+	"support": {
+		"issues": "https://github.com/Simbacode/moneycake/issues",
+		"forum": "http://stackoverflow.com/tags/moneycake",
+		"irc": "irc://irc.freenode.org/Moneycake",
+		"source": "https://github.com/Simbacode/moneycake"
+	},
+	"require": {
+            "php": ">=5.3.3",
+            "ext-sockets": "*",
+            "ext-mbstring": "*"
+          },
+        "require-dev": {
+        },
+	"autoload": {
+		"psr-4": {
+			"PHPSMPP\\": "src"
+		}
+	}
+}

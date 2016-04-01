@@ -1,5 +1,5 @@
 <?php
-
+namespace PHPSMPP\Network;
 /**
  * TCP Socket Transport for use with multiple protocols.
  * Supports connection pools and IPv6 in addition to providing a few public methods to make life easier.
@@ -374,5 +374,3 @@ class SocketTransport
 		}
 	}
 }
-
-class SocketTransportException extends RuntimeException { }
